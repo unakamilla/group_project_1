@@ -1,3 +1,14 @@
+# Uppsetning verkefnis:
+Til að keyra
+
+```sh
+npm install
+npm run dev
+```
+Til að linta
+```sh
+npm run lint
+```
 
 # Hópverkefni 1
 
