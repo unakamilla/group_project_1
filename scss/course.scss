@@ -1,6 +1,9 @@
 html {
   font-family: $mainfont;
 }
+body {
+   margin: 0;
+}
 
 h1 {
   font-family: $headerfont;
@@ -76,5 +79,6 @@ a {
   &__copyright {
     text-align: center;
     font-size: $fontsize*3/4;
+    padding-bottom: $gutter;
   }
 }
