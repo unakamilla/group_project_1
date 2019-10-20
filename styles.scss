@@ -11,11 +11,23 @@
   box-sizing: inherit;
 }
 
+$maxwidth: 1200px;
+$gutter: 20px;
+$mainfont: 'Open Sans', helvetica, arial, sans-serif;
+$headerfont: 'Oswald', verdana, serif;
+$fontsize: 16px;
+$black: #000000;
+$yellow: #fffcf2;
+$orange: #ff5000;
+$blue: #00b7ff;
+$transition: 0.2s;
+
 html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
 
   // TODO fleiri grunn stillingar
+  max-width: $maxwidth;
 }
 
 // TODO sækja allar sass skrár
