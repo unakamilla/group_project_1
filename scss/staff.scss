@@ -1,0 +1,43 @@
+.staff__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.staff__card {
+  margin: 10px;
+  width: 500px;
+  height: 800px;
+}
+
+.staff__card img {
+  width: 100%;
+}
+
+.staff__content {
+  display: flex;
+  padding: 10px;
+  vertical-align: middle;
+  transition-timing-function: ease-in-out;
+  transition: 200ms;
+  transform-style: preserve-3d;
+}
+
+.staff__card:hover .staff__content {
+  transition-timing-function: ease-in-out;
+  transform: rotateY( 180deg ) ;
+  transition: 200ms;
+}
+
+.staff__image {
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.staff__text {
+  background-color: white;
+  color: black;
+  text-align: center;
+  backface-visibility: hidden;
+  transform: rotateY( 180deg );
+}
