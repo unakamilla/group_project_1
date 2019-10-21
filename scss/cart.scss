@@ -1,27 +1,37 @@
 .header {
   background-color: $orange;
   padding: $gutter;
-}
-.title {
-  display: flex;
-  justify-content: center;
-  font-family: $headerfont;
-}
-.sidur {
-  display: flex;
-  margin-left: 400px;
-  font-size: $fontsize;
-  font-family: $mainfont;
-  font-weight: bold;
-}
-.sida {
-  padding: $gutter;
-  &__karfa {
-    align-self: flex-end;
-    font-weight: normal;
+  &__title {
+    display: flex;
+    justify-content: center;
+    font-family: $headerfont;
   }
-}
-a {
-  color: #000;
-  text-decoration: none;
+  &__links {
+    display: flex;
+    justify-content: center;
+    font-size: $fontsize;
+    font-family: $mainfont;
+  }
+  &__link {
+    padding: $gutter;
+    & > a {
+      font-weight: bold;
+      color: $black;
+      text-decoration: none;
+      &:hover {
+        color: $white;
+        transition: $transition;
+        transition-timing-function: ease-in-out;
+      }
+    }
+  }
+  &__cart  {
+    padding: $gutter;
+    display: flex;
+    justify-content: flex-end;
+    & > a {
+      color: $black;
+      text-decoration: none;
+    }
+  }
 }
