@@ -61,6 +61,7 @@ a {
   text-decoration: none;
 }
 .main {
+  margin: auto;
   max-width: $maxwidth;
 }
 
@@ -72,39 +73,50 @@ a {
 @import "scss/staff.scss";
 
 
-// header
+// HEADER
 .header {
   background-color: $orange;
   padding: $gutter;
   margin: 0px -2000px; // til ad appelsinugulur fylli alla breidd
   padding: 0px 2000px;
-}
-.title {
-  display: flex;
-  justify-content: center;
-  font-family: $headerfont;
-}
-.sidur {
-  display: flex;
-  justify-content: center;
-  font-size: $fontsize;
-  font-family: $mainfont;
-  font-weight: bold;
-}
-.sida {
-  padding: $gutter;
-  &__karfa {
-    align-self: flex-end;
-    font-weight: normal;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+
+  }
+  &__links {
+    display: flex;
+    justify-content: center;
+    font-size: $fontsize;
+    font-family: $mainfont;
+  }
+  &__link {
+    padding: $gutter;
+    & > a {
+      font-weight: bold;
+      color: $black;
+      text-decoration: none;
+      &:hover {
+        color: $white;
+        transition: $transition;
+        transition-timing-function: ease-in-out;
+      }
+    }
+  }
+  &__cart  {
+    padding: $gutter;
+    display: flex;
+    justify-content: flex-end;
+    & > a {
+      color: $black;
+      text-decoration: none;
+    }
   }
 }
-a {
-  color: #000;
-  text-decoration: none;
-}
 
 
-// footer
+// FOOTER
 .footer {
   font-size: $fontsize *0,875; //14px
   background-color: $blue;
