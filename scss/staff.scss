@@ -1,25 +1,41 @@
-.staff__cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+.staff{
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-.staff__card {
-  margin: $gutter/2;
-  width: $maxwidth/3;
-  height: $maxwidth/2;
-}
+  &__card {
+    width: 50%;
+    height: 0;
+    padding-bottom: 75%;
+    overflow:hidden;
+  }
 
-.staff__card img {
-  width: 100%;
-  height: 100%
-}
+  &__card img {
+    width: 100%;
+    height: 100%
+  }
 
-.staff__content {
-  padding: $gutter/2;
-  transition-timing-function: ease-in-out;
-  transition: $transition;
-  transform-style: preserve-3d;
+  &__content {
+    padding: $gutter;
+    transition-timing-function: ease-in-out;
+    transition: $transition;
+    transform-style: preserve-3d;
+  }
+
+  &__image {
+    backface-visibility: hidden;
+    position: absolute;
+  }
+
+  &__text {
+    background-color: white;
+    color: black;
+    text-align: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+  }
 }
 
 .staff__card:hover .staff__content {
@@ -28,16 +44,9 @@
   transition: $transition;
 }
 
-.staff__image {
-  backface-visibility: hidden;
-  position: absolute;
-}
-
-.staff__text {
-
-  background-color: white;
-  color: black;
-  text-align: center;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
+@media (max-width: 699px) {
+  .staff__card {
+    width: 100%;
+    padding-bottom: 150%;
+  }
 }
