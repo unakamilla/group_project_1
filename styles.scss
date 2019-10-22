@@ -27,8 +27,39 @@ html { /* stylelint-disable-line */
   max-width: $maxwidth;
   box-sizing: border-box;
   overflow-x: hidden;
-
+  margin: auto;
+  font-family: $mainfont;
+  font-size: $fontsize;
+}
   // TODO fleiri grunn stillingar
+
+h1 {
+  font-family: $headerfont;
+  font-size: $fontsize * 3.75; // 60px
+}
+
+h2 {
+  font-family: $headerfont;
+  font-size: $fontsize * 3; // 48px
+}
+
+h3 {
+  font-family: $headerfont;
+  font-size: $fontsize * 2.25; //36px
+  color: $black;
+  margin-bottom: $gutter;
+}
+
+h4 {
+  font-family: $headerfont;
+  font-size: $fontsize *1.5; //24 px
+  color: $black;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
 }
 
 // TODO sækja allar sass skrár
@@ -37,3 +68,73 @@ html { /* stylelint-disable-line */
 @import "scss/course.scss";
 @import "scss/products.scss";
 @import "scss/staff.scss";
+
+
+// header
+.header {
+  background-color: $orange;
+  padding: $gutter;
+  margin: 0px -2000px; // til ad appelsinugulur fylli alla breidd
+  padding: 0px 2000px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: $headerfont;
+}
+.sidur {
+  display: flex;
+  justify-content: center;
+  font-size: $fontsize;
+  font-family: $mainfont;
+  font-weight: bold;
+}
+.sida {
+  padding: $gutter;
+  &__karfa {
+    align-self: flex-end;
+    font-weight: normal;
+  }
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+
+// footer
+.footer {
+  font-size: $fontsize *0,875; //14px
+  background-color: $blue;
+  background-size: cover;
+  margin: 0px -2000px; // til ad blar fylli alla breidd
+  padding: 0px 2000px;
+
+  &__link > a{
+    color: $white;
+    text-decoration: none;
+    line-height: $fontsize*1.5;
+    transition: $transition;
+    transition-timing-function: ease-in-out;
+  }
+  &__link:hover >a{
+    color: $black;
+  }
+
+  &__klasar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: $gutter;
+  }
+  &__klasi {
+    min-width: $maxwidth/5;
+    max-width: $maxwidth/2;
+  }
+
+  &__copyright {
+    text-align: center;
+    font-size: $fontsize*3/4;
+    padding-bottom: $gutter;
+  }
+}

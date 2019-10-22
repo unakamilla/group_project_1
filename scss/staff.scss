@@ -1,32 +1,31 @@
 .staff__cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .staff__card {
-  margin: 10px;
-  width: 500px;
-  height: 800px;
+  margin: $gutter/2;
+  width: $maxwidth/3;
+  height: $maxwidth/2;
 }
 
 .staff__card img {
   width: 100%;
+  height: 100%
 }
 
 .staff__content {
-  display: flex;
-  padding: 10px;
-  vertical-align: middle;
+  padding: $gutter/2;
   transition-timing-function: ease-in-out;
-  transition: 200ms;
+  transition: $transition;
   transform-style: preserve-3d;
 }
 
 .staff__card:hover .staff__content {
   transition-timing-function: ease-in-out;
-  transform: rotateY( 180deg ) ;
-  transition: 200ms;
+  transform: rotateY(180deg);
+  transition: $transition;
 }
 
 .staff__image {
@@ -35,9 +34,10 @@
 }
 
 .staff__text {
+
   background-color: white;
   color: black;
   text-align: center;
   backface-visibility: hidden;
-  transform: rotateY( 180deg );
+  transform: rotateY(180deg);
 }

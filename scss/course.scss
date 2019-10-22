@@ -1,33 +1,3 @@
-html {
-  font-family: $mainfont;
-}
-
-h1 {
-  font-family: $headerfont;
-  font-size: $fontsize * 3.75;
-}
-
-h2 {
-  font-family: $headerfont;
-  font-size: $fontsize * 3;
-}
-
-h3 {
-  font-family: $headerfont;
-  font-size: $fontsize * 2.25;
-  color: $black;
-  margin-bottom: 20px;
-}
-
-p {
-  font-family: $mainfont;
-  font-size: $fontsize;
-}
-
-a {
-  text-decoration: none;
-}
-
 .button {
   background-color: $blue;
   border-radius: 5px;
@@ -45,37 +15,4 @@ a {
   color: white;
   background-color: $orange;
 
-}
-
-.footer {
-  font-size: $fontsize *7/8;
-  background-color: $blue;
-
-  &__link > a{
-    color: $white;
-    text-decoration: none;
-    line-height: $fontsize*1.5;
-    transition: $transition;
-    transition-timing-function: ease-in-out;
-  }
-  &__link:hover >a{
-    color: $black;
-  }
-
-  &__klasar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: $gutter;
-  }
-  &__klasi {
-    min-width: $maxwidth/5;
-    max-width: $maxwidth/2;
-  }
-
-  &__copyright {
-    text-align: center;
-    font-size: $fontsize*3/4;
-    padding-bottom: $gutter;
-  }
 }
