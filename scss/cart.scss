@@ -1,1 +1,13 @@
-
+.main {
+  margin: $gutter;
+}
+.vara {
+  margin: $gutter;
+  display: flex;
+  &__img {
+    width: 50%;
+  }
+  &__nanar > *{
+    margin: $gutter;
+  }
+}
