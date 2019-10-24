@@ -26,7 +26,8 @@ $transition: 0.2s;
 html { /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
-  margin: auto;
+  display: flex;
+  justify-content: center;
   font-family: $mainfont;
   font-size: $fontsize;
 }
@@ -61,7 +62,6 @@ a {
   text-decoration: none;
 }
 .main {
-  margin: auto;
   max-width: $maxwidth;
 }
 
