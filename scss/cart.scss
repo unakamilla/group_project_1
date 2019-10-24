@@ -11,14 +11,33 @@
     margin: $gutter;
   }
   &__button {
-    border-radius: 3px;
+    border-radius: 7px;
     width: auto;
-    height: 30px
+    height: 40px;
   }
 }
 .uppl {
   display: flex;
-  &__send, &__pay {
-    margin-right: $gutter;
+  &__send {
+    width: 50%;
+    margin-right: $gutter/2;
   }
+  &__pay {
+    width: 50%;
+    margin-left: $gutter/2;
+  }
+}
+.form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: $gutter;
+}
+.button__kaupa {
+  background-color: $blue;
+  margin-left: 33.3%;
+  width: 33.3%;
+  height: 40px;
+  margin-bottom: $gutter*2;
+  border: none;
+  border-radius: 7px;
 }
