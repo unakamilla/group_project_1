@@ -79,6 +79,8 @@ a {
   padding: $gutter;
   margin: 0px -2000px; // til ad appelsinugulur fylli alla breidd
   padding: 0px 2000px;
+  display: block;
+  position: relative;
 
   &__title {
     display: flex;
@@ -86,12 +88,12 @@ a {
 
   }
   &__links {
-    display: flex;
-    justify-content: center;
+    margin-left: 25%;
     font-size: $fontsize;
     font-family: $mainfont;
   }
   &__link {
+    display: inline-block;
     padding: $gutter;
     & > a {
       font-weight: bold;
@@ -105,12 +107,10 @@ a {
     }
   }
   &__cart  {
-    padding: $gutter;
-    display: flex;
-    justify-content: flex-end;
     & > a {
       color: $black;
       text-decoration: none;
+      font-weight: normal;
     }
   }
 }

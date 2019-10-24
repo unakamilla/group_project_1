@@ -10,4 +10,15 @@
   &__nanar > *{
     margin: $gutter;
   }
+  &__button {
+    border-radius: 3px;
+    width: auto;
+    height: 30px
+  }
+}
+.uppl {
+  display: flex;
+  &__send, &__pay {
+    margin-right: $gutter;
+  }
 }

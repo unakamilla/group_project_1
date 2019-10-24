@@ -25,7 +25,7 @@
         <div class="header__link">
           <a href="../pages/staff.html">STARFSFÓLK</a>
         </div>
-        <div  class="header__cart">
+        <div  class="header__link" class="header__cart">
           <img src="../img/cart.svg" alt="karfa" >
           <a href="../pages/cart.html">Karfa (6)</a>
         </div>
@@ -43,12 +43,12 @@
             <h3>49.900 kr</h3>
             <div class="vara__fjoldi">
               <p>Fjöldi:</p>
-              <!-- TODO bæta við plúsmínus -->
+              <input type="number" value="2" class="vara__button">
               <button type="button" name="karfa" class="vara__button">
                 <img src="../img/cart.svg" alt="karfa" >
                 Uppfæra
               </button>
-              <button type="button" name="refres"  class="vara__button">
+              <button type="button" name="refresh"  class="vara__button">
                 <img src="../img/cart.svg" alt="karfa" >
                 Eyða úr körfu
               </button>
@@ -64,25 +64,24 @@
             <h3>4.900 kr</h3>
             <div class="vara__fjoldi">
               <p>Fjöldi:</p>
-              <!-- TODO bæta við plúsmínus -->
+              <input type="number" value="4" class="vara__button">
               <button type="button" name="karfa" class="vara__button">
                 <img src="../img/cart.svg" alt="karfa" >
                 Uppfæra
               </button>
-              <button type="button" name="refres" class="vara__button">
+              <button type="button" name="refresh" class="vara__button">
                 <img src="../img/cart.svg" alt="karfa" >
                 Eyða úr körfu
               </button>
             </div>
           </div>
         </div>
-
       </section>
-      <section class="sendingaruppl">
-        <h2>Sendingarupplýsingar</h2>
-        <div class="form">
-          <form>
-          <fieldset>
+
+      <section class="uppl">
+        <section class="uppl__send">
+          <h2>Sendingarupplýsingar</h2>
+          <form class="form">
             <div>
               <label for="sendingaruppl__name">Nafn: </label>
               <input type="text" id="name" required="">
@@ -96,15 +95,11 @@
               <label for="sendingaruppl__postnr">Póstnúmer: </label>
               <input type="postnr" id="address" required="">
             </div>
-          </fieldset>
-        </form>
-        </div>
-      </section>
-      <section class="greidsluuppl">
-        <h2>Greiðsluupplýsingar</h2>
-        <div class="form">
-          <form>
-          <fieldset>
+          </form>
+        </section>
+        <section class="uppl__pay">
+          <h2>Greiðsluupplýsingar</h2>
+            <form class="form">
             <div>
               <label for="greidsluuppl__numer">Kortanúmer: </label>
               <input type="text" id="name" required="">
@@ -140,9 +135,9 @@
                 <option value="2022">2022</option>
               </select>
             </div>
-          </fieldset>
-        </form>
-        </div>
+          </form>
+          </div>
+        </section>
       </section>
       <button type="button" name="Panta">Panta</button>
 
