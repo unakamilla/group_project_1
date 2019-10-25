@@ -85,13 +85,14 @@ a {
   &__title {
     display: flex;
     justify-content: center;
-
   }
+
   &__links {
     margin-left: 25%;
     font-size: $fontsize;
     font-family: $mainfont;
   }
+
   &__link {
     display: inline-block;
     padding: $gutter;
