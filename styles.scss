@@ -127,7 +127,7 @@ a {
   &__link > a{
     color: $white;
     text-decoration: none;
-    line-height: $fontsize*1.5;
+    line-height: $fontsize*2;
     transition: $transition;
     transition-timing-function: ease-in-out;
   }
