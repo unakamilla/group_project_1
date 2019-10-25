@@ -24,7 +24,8 @@
 
 }
 
-@media (max-width:700px){
+
+@media (max-width:700px) {
   .course__row{
     flex-direction: column;
   }
@@ -54,10 +55,19 @@
   background-color: $orange;
 }
 
-.form {
+.uppl {
+  display: flex;
+  flex-direction: column;
+}
+.forms {
   display: flex;
   justify-content: space-between;
   margin-top: $gutter;
+}
+.form > * {
+  display: flex;
+  justify-content: space-between;
+  
 }
 .button__kaupa {
   background-color: $blue;
