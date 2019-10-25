@@ -16,6 +16,7 @@
     height: 40px;
   }
 }
+
 .uppl {
   display: flex;
   &__send {
@@ -27,11 +28,13 @@
     margin-left: $gutter/2;
   }
 }
+
 .form {
   display: flex;
   justify-content: space-between;
   margin-top: $gutter;
 }
+
 .button__kaupa {
   background-color: $blue;
   margin-left: 33.3%;
