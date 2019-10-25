@@ -10,6 +10,27 @@ Til að linta
 npm run lint
 ```
 
+#Lýsing
+Þetta er heimasíða ímyndaðs fyrirtækis, sem heitir Prílihúsið. Á síðunni má finna ýmsar upplýsingar um vörur sem eru seldar í verslun Prílihússins, námskeið sem þar eru haldin og starfsólk fyrirtækisins. Hér er líka vefverslun (án virkni :blush:).
+
+Uppbygging vefsins:
+* forsíða (index.html)
+  * vörur (./pages/products.html)
+  * námskeið (./pages/course.html)
+  * starfsfólk (./pages/staff.html)
+  * karfa vefverslunar (./pages/cart.html)
+
+Í skránni `config.scss` eru grunnstærðir vefnsins skilgreindar, mesta breidd, grunnstærð leturs, leturgerðir og litir. Útlit hauss (`header`) og fóts (`footer`) fyrir síðuna eru sett upp í `styles.scss` en stillingar meginmáls hverrar síðu (`main`) er sett upp í viðeigandi `.scss` skrá hverrar síðu, en þær eru í möppunni `pages`. Skráin `styles.scss` importar stillingum hinna síðanna. `node-sass` þýðir `.scss` í `.css`.
+
+Vefurinn er þróaður fyrir Google Chrome og virkar best í þeim vafra.
+
+
+# Höfundar
+Guðný Halldórsdóttir (gudnyha@hi.is), Unu Kamilla Steinsen (uks4@hi.is) og Vilborg Vala Sigurjónsdóttir (vvs4@hi.is) unnu þetta verkefni saman.
+
+# Upphafleg verklýsing:
+----------
+
 # Hópverkefni 1
 
 Verkefnið felst í því að smíða vef eftir forskrift.

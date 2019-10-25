@@ -11,18 +11,6 @@
   box-sizing: inherit;
 }
 
-$maxwidth: 1200px;
-$gutter: 20px;
-$mainfont: "Open Sans", helvetica, arial, sans-serif;
-$headerfont: "Oswald", verdana, serif;
-$fontsize: 16px;
-$black: #000;
-// $yellow: #fffcf2;
-$orange: #ff5000;
-$blue: #00b7ff;
-$white: #fff;
-$transition: 0.2s;
-
 html { /* stylelint-disable-line */
   display: flex;
   box-sizing: border-box;
@@ -31,8 +19,6 @@ html { /* stylelint-disable-line */
   font-family: $mainfont;
   font-size: $fontsize;
 }
-
-// fleiri grunn stillingar
 
 h1 {
   font-family: $headerfont;
