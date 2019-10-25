@@ -34,24 +34,24 @@ html { /* stylelint-disable-line */
 
 // fleiri grunn stillingar
 
-h1 {
+.heading1 {
   font-family: $headerfont;
   font-size: $fontsize * 3.75; // 60px
 }
 
-h2 {
+.heading2 {
   font-family: $headerfont;
   font-size: $fontsize * 3; // 48px
 }
 
-h3 {
+.heading3 {
   margin-bottom: $gutter;
   font-family: $headerfont;
   font-size: $fontsize * 2.25; //36px
   color: $black;
 }
 
-h4 {
+.heading4 {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: $headerfont;
@@ -59,9 +59,6 @@ h4 {
   color: $black;
 }
 
-a {
-  text-decoration: none;
-}
 
 .main {
   max-width: $maxwidth;
