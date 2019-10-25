@@ -17,15 +17,15 @@ $mainfont: "Open Sans", helvetica, arial, sans-serif;
 $headerfont: "Oswald", verdana, serif;
 $fontsize: 16px;
 $black: #000;
-$yellow: #fffcf2;
+// $yellow: #fffcf2;
 $orange: #ff5000;
 $blue: #00b7ff;
 $white: #fff;
 $transition: 0.2s;
 
 html { /* stylelint-disable-line */
-  box-sizing: border-box;
   display: flex;
+  box-sizing: border-box;
   overflow-x: hidden;
   justify-content: center;
   font-family: $mainfont;
@@ -45,18 +45,18 @@ h2 {
 }
 
 h3 {
+  margin-bottom: $gutter;
   font-family: $headerfont;
   font-size: $fontsize * 2.25; //36px
-  margin-bottom: $gutter;
   color: $black;
 }
 
 h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-family: $headerfont;
   font-size: $fontsize *1.5; //24 px
   color: $black;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 a {
@@ -74,14 +74,13 @@ a {
 @import "scss/products.scss";
 @import "scss/staff.scss";
 
-
 // HEADER
 .header {
-  background-color: $orange;
   position: relative;
   display: block;
   padding: 0px 2000px;
   margin: 0px -2000px; // til ad appelsinugulur fylli alla breidd
+  background-color: $orange;
 
   &__title {
     display: flex;
@@ -97,10 +96,12 @@ a {
   &__link {
     display: inline-block;
     padding: $gutter;
+
     & > a {
       font-weight: bold;
       color: $black;
       text-decoration: none;
+
       &:hover {
         color: $white;
         transition: $transition;
@@ -109,36 +110,34 @@ a {
     }
   }
 
-  &__open{
-      text-decoration: underline;
+  &__open {
+    text-decoration: underline;
   }
 
-  &__cart  {
-    & > a {
-      color: $black;
-      text-decoration: none;
-      font-weight: normal;
-    }
+  &__cart > a {
+    font-weight: normal;
+    color: $black;
+    text-decoration: none;
   }
 }
 
-
 // FOOTER
 .footer {
-  font-size: $fontsize *0,875; //14px
+  padding: 0px 2000px;
+  margin: 0px -2000px; // til ad blar fylli alla breidd
+  font-size: $fontsize*7/8; //14px
   background-color: $blue;
   background-size: cover;
-  margin: 0px -2000px; // til ad blar fylli alla breidd
-  padding: 0px 2000px;
 
-  &__link > a{
-    color: $white;
-    text-decoration: none;
+  &__link > a {
     line-height: $fontsize*2;
+    text-decoration: none;
     transition: $transition;
     transition-timing-function: ease-in-out;
+    color: $white;
   }
-  &__link:hover >a{
+
+  &__link:hover > a {
     color: $black;
   }
 
@@ -148,14 +147,15 @@ a {
     justify-content: center;
     margin-bottom: $gutter;
   }
+
   &__klasi {
     min-width: $maxwidth/5;
     max-width: $maxwidth/2;
   }
 
   &__copyright {
-    text-align: center;
-    font-size: $fontsize*3/4;
     padding-bottom: $gutter;
+    font-size: $fontsize*3/4;
+    text-align: center;
   }
 }
