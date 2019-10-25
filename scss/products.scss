@@ -1,0 +1,26 @@
+.vorur {
+   display: flex;
+   flex-wrap: wrap;
+}
+.products-vara {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @media (min-width: 500px) {
+    width: 50%;
+  }
+  @media (min-width: 800px) {
+    width: 33.3%;
+    height: auto;
+  }
+  &__img {
+    padding: $gutter;
+    object-fit: contain;
+    width: 100%;
+  }
+  &__button {
+    display: flex;
+    border-radius: 7px;
+    height: 40px;
+  }
+}
