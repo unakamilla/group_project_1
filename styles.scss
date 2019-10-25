@@ -47,7 +47,6 @@ html { /* stylelint-disable-line */
   color: $black;
 }
 
-
 .main {
   max-width: $maxwidth;
 }
@@ -116,10 +115,10 @@ html { /* stylelint-disable-line */
 
   &__link > a {
     line-height: $fontsize*2;
+    color: $white;
     text-decoration: none;
     transition: $transition;
     transition-timing-function: ease-in-out;
-    color: $white;
   }
 
   &__link:hover > a {

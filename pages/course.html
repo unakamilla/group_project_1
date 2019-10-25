@@ -50,23 +50,23 @@
       <div class="course__row">
         <div class="course__col">
           <section class="uppl">
-            <section class="uppl__send">
-              <h2>Almennar upplýsingar</h2>
-              <form class="form">
-                <div>
-                  <label for="almennaruppl__name">Nafn: </label>
+            <h2 class="heading2">Almennar upplýsingar</h2>
+            <div class="forms">
+              <form>
+                <div class="form">
+                  <label for="form__name">Nafn: </label>
                   <input type="text" id="name" required="">
                 </div>
-                <div>
-                  <label for="almennaruppl__address">Heimilisfang: </label>
+                <div class="form">
+                  <label for="form__address">Heimilisfang: </label>
                   <input type="address" id="address" required="">
                 </div>
-                <div>
-                  <label for="almennaruppl__age">Aldur: </label>
+                <div class="form">
+                  <label for="form__age">Aldur: </label>
                   <input type="age" id="age" required="">
                 </div>
-                <div>
-                  <label for="almennaruppl__namskeid">Námskeið: </label>
+                <div class="form">
+                  <label for="form__namskeid">Námskeið: </label>
                   <select id="namskeid">
                     <option value="V0-V1">V0-V1</option>
                     <option value="V2-V6">V2-V4</option>
@@ -76,54 +76,52 @@
                   </select>
                 </div>
               </form>
-            </section>
+            </div>
           </section>
         </div>
 
         <div class="course__col">
           <section class="uppl">
-            <section class="uppl__pay">
-              <h2 class="heading2">Greiðsluupplýsingar</h2>
-              <div class="greidsluuppl">
-                <form>
-                  <div>
-                    <label for="greidsluuppl__numer">Kortanúmer: </label>
-                    <input type="text" id="name" required="">
-                  </div>
-                  <div>
-                    <label for="greidsluuppl__email">Korthafi: </label>
-                    <input type="email" id="email" required="">
-                  </div>
-                  <div>
-                    <p>Gildistími:</p>
-                    <label for="greidsluuppl__gildistimi__man">Mán.</label>
-                    <select id="gildistimi__man">
-                      <option value="01">01</option>
-                      <option value="02">02</option>
-                      <option value="03">03</option>
-                      <option value="04">04</option>
-                      <option value="05">05</option>
-                      <option value="06">06</option>
-                      <option value="07">07</option>
-                      <option value="08">08</option>
-                      <option value="09">09</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label for="greidsluuppl__gildistimi__ar">Ár</label>
-                    <select id="gildistimi__ar">
-                      <option value="2019">2019</option>
-                      <option value="2020">2020</option>
-                      <option value="2021">2021</option>
-                      <option value="2022">2022</option>
-                    </select>
-                  </div>
-              </form>
-              </div>
-            </section>
+            <h2 class="heading2">Greiðsluupplýsingar</h2>
+            <div class="forms">
+              <form>
+                <div class="form">
+                  <label for="form__numer">Kortanúmer: </label>
+                  <input type="text" id="numer" required="">
+                </div>
+                <div class="form">
+                  <label for="form__email">Korthafi: </label>
+                  <input type="email" id="email" required="">
+                </div>
+                <div class="form">
+                  <p>Gildistími:</p>
+                  <label for="form__gildistimi__man">Mán.</label>
+                  <select id="form__man">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+                <div class="form">
+                  <label for="form__gildistimi__ar">Ár</label>
+                  <select id="gildistimi__ar">
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                  </select>
+                </div>
+            </form>
+            </div>
           </section>
         </div>
       </div>
