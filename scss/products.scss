@@ -1,11 +1,13 @@
 .vorur {
-   display: flex;
-   flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .products-vara {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 100%;
+  padding: $gutter/2;
   @media (min-width: 500px) {
     width: 50%;
   }
@@ -18,9 +20,18 @@
     object-fit: contain;
     width: 100%;
   }
-  &__button {
+  &__verd {
+    flex-grow: 1;
+  }
+  &__takkar {
     display: flex;
-    border-radius: 7px;
-    height: 40px;
+    justify-content: space-between;
+    & > * {
+      border-radius: 5px;
+      height: $gutter*2;
+    }
+  }
+  &__fjoldi {
+    width: 30%;
   }
 }
