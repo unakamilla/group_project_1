@@ -19,6 +19,7 @@
 
 .uppl {
   display: flex;
+  flex-direction: row;
   &__send {
     width: 50%;
     margin-right: $gutter/2;
