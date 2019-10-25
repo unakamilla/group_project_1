@@ -53,3 +53,18 @@
   color: white;
   background-color: $orange;
 }
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: $gutter;
+}
+.button__kaupa {
+  background-color: $blue;
+  margin-left: 33.3%;
+  width: 33.3%;
+  height: 40px;
+  margin-bottom: $gutter*2;
+  border: none;
+  border-radius: 7px;
+}

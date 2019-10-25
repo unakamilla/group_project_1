@@ -108,6 +108,11 @@ a {
       }
     }
   }
+
+  &__open{
+      text-decoration: underline;
+  }
+
   &__cart  {
     & > a {
       color: $black;
