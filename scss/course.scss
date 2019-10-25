@@ -1,5 +1,41 @@
+.course{
+  &__row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: $gutter;
+  }
 
+  &__col {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
 
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  img{
+    width: 100%
+  }
+
+}
+
+@media (max-width:700px){
+  .course__row{
+    flex-direction: column;
+  }
+  .course__col{
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+// skilgreinir button fyrir alla síðuna
 .button {
   background-color: $blue;
   border-radius: 5px;
@@ -16,5 +52,4 @@
 .button:hover{
   color: white;
   background-color: $orange;
-
 }
